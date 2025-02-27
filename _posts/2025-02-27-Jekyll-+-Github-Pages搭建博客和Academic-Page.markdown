@@ -7,7 +7,7 @@ tags: [jekyll, gitHub pages, ruby, blog]
 
 ## Three Reference Websites
 
-* [Automated Deployment | Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/deployment/automated/)
+* [Automated Deployment - Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/deployment/automated/)
 * [About GitHub Pages and Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll)
 * [The fastest and easiest way to install Ruby on a Mac in 2023](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#configure-your-shell)
 
