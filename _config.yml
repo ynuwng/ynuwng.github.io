@@ -121,7 +121,7 @@ comments:
   giscus:
     repo: "ynuwng/ynuwng.github.io" # <gh-username>/<repo>
     repo_id: "R_kgDOOAsauA"
-    category: "Announcements"
+    category: "General"
     category_id: "DIC_kwDOOAsauM4CnaP0"
     mapping: "pathname" # optional, default to 'pathname'
     strict: "0" # optional, default to '0'
