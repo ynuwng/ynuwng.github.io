@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Source Han Sans CN';
+    src: url('/assets/fonts/SourceHanSansCN-VF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// 应用于整个站点
+body {
+    font-family: 'Source Han Sans CN', sans-serif;
+}
+:root {
+    --bs-body-font-family: 'Source Han Sans CN', sans-serif;
+}
+
