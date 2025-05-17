@@ -1,0 +1,9 @@
+{% comment %}
+  只有在非文章页（page.layout != "post"）时才渲染侧边栏
+{% endcomment %}
+{% unless page.layout == "post" %}
+  <!-- ——以下是从主题里拷贝过来的sidebar原始内容—— -->
+  <aside id="sidebar" class="sidebar">
+    <!-- … 原导航菜单、分类、标签、社交链接 等 … -->
+  </aside>
+{% endunless %}
