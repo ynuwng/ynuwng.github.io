@@ -1,9 +1,22 @@
 {% comment %}
-  只有在非文章页（page.layout != "post"）时才渲染侧边栏
+  仅在非文章集合页面渲染侧边栏（隐藏所有 /_posts/ 目录下生成的文章页）
 {% endcomment %}
-{% unless page.layout == "post" %}
-  <!-- ——以下是从主题里拷贝过来的sidebar原始内容—— -->
-  <aside id="sidebar" class="sidebar">
-    <!-- … 原导航菜单、分类、标签、社交链接 等 … -->
-  </aside>
+{% unless page.collection == "posts" %}
+<aside id="sidebar" class="sidebar">
+  <!-- ——下面开始是你从主题里拷贝过来的原始 sidebar.html 内容—— -->
+  <nav class="sidebar-nav">
+    <ul>
+      <li><a href="{{ "/" | relative_url }}">首页</a></li>
+      <li><a href="{{ "/categories/" | relative_url }}">分类</a></li>
+      <li><a href="{{ "/tags/" | relative_url }}">标签</a></li>
+      <!-- ……其余菜单项…… -->
+    </ul>
+  </nav>
+
+  <!-- 社交、热门文章之类的 widget -->
+  {% include widgets/socials.html %}
+  {% include widgets/popular.html %}
+  {% include widgets/recent.html %}
+  <!-- ……按主题原始逻辑放完所有小组件…… -->
+</aside>
 {% endunless %}
